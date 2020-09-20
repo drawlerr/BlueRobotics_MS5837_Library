@@ -62,6 +62,10 @@ public:
 	 */
 	void setFluidDensity(float density);
 
+    /** Get the density of the working fluid in kg/m^3.
+     */
+    float getFluidDensity();
+
 	/** The read from I2C takes up to 40 ms, so use sparingly is possible.
 	 */
 	void read();

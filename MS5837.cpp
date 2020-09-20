@@ -57,6 +57,10 @@ void MS5837::setFluidDensity(float density) {
 	fluidDensity = density;
 }
 
+float MS5837::getFluidDensity() {
+    return fluidDensity;
+}
+
 void MS5837::read() {
 	// Request D1 conversion
 	Wire.beginTransmission(MS5837_ADDR);
